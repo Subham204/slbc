@@ -20,3 +20,6 @@ use Illuminate\Support\Facades\Route;
  Route::get('/',[App\Http\Controllers\TestController::class,'homepage']);
  Route::get('homepage',[App\Http\Controllers\TestController::class,'homepage']);
  Route::get('service',[App\Http\Controllers\TestController::class,'service']);
+ Route::get('test', function () {
+    return view('test');
+});

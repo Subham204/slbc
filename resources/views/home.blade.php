@@ -16,6 +16,7 @@
 	<link rel="stylesheet" href="assets/css/nice-select.css">
 	<link rel="stylesheet" href="assets/css/animate.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/custom.css">
 </head>
 
 <body id="home" class="inner-scroll">
@@ -29,6 +30,9 @@
 		</div>
 	</div>
 	<!--============== PRELOADER END ==============-->
+
+
+
 	<!-- ================= HEADER ================= -->
 	<header class="header">
 		<a href="#" class="nav-btn">
@@ -39,21 +43,20 @@
 		<div class="top-panel">
 			<div class="container">
 				<div class="top-panel-cover">
-					<ul class="header-cont">
-						<li><a href="tel:+912345687"><i class="fa fa-phone"></i>+9123 456 87</a></li>
-						<li><a href="mailto:creto@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>creto@gmail.com</a></li>
-					</ul>
+					
 					<ul class="icon-right-list">
-						<li><a class="header-like" href="#"><i class="fa fa-heart" aria-hidden="true"></i><span>6</span></a></li>
-						<li><a class="header-user" href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
-						<li><a class="header-cart" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+						<li><a href="tel:+919474323423"><i class="fa fa-mobile" aria-hidden="true"></i> +919474323423</a></li>
+						<li><a  onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+						<li><a class="header-cart" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>2</span></a></li>
+						
 					</ul>
 				</div>
 			</div>
 		</div>
 		<div class="header-menu">
 			<div class="container">
-				<a href="index.html" class="logo"><img src="assets/img/logo.svg" alt="logo"></a>
+				<a href="homepage" class="logo"><img src="assets/img/slbclogo.png" alt="logo"  ></a>
+				
 				<nav class="nav-menu">
 					<ul class="nav-list">
 						<li><a href="homepage">Home</a></li>
@@ -75,120 +78,89 @@
 		</div>
 	</header>
 	<!-- =============== HEADER END =============== -->
+	<!-- login -->
+	<div id="id01" class="modal">
+  
+			<form class="modal-content animate" action="/action_page.php" method="post">
+				<div class="imgcontainer">
+				<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				<img src="assets/img/slbcbiglogo.png" alt="Avatar" class="avatar">
+				</div>
 
-	<!-- =============== main-slider =============== -->
-	<section class="s-main-slider">
-		<div class="main-slide-navigation"></div>
-		<ul class="main-soc-list">
-			<li><a href="https://www.facebook.com/rovadex">facebook</a></li>
-			<li><a href="https://twitter.com/RovadexStudio">twitter</a></li>
-			<li><a href="https://www.instagram.com/rovadex/">instagram</a></li>
-		</ul>
-		<div class="main-slider">
-			<div class="main-slide">
-				<div class="main-slide-bg" style="background-image: url(assets/img/bg-slider.svg);"></div>
 				<div class="container">
+				<label for="uname"><b>Username</b></label>
+				<input type="text" placeholder="Enter Username" name="uname" required>
+
+				<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw" required>	
+				<button type="submit" class="subbtn">Login</button>
+				<label>
+					<input type="checkbox" checked="checked" name="remember"> Remember me
+				</label>
+				</div>
+
+				<div class="container" style="background-color:#f1f1f1">
+				<!-- <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button> -->
+				<span class="psw">Forgot <a href="#">password?</a></span>
+				</div>
+			</form>
+	</div>
+
+	<!-- login end -->
+	<!-- service -->
+	<div class="container">
 					<div class="main-slide-info">
-						<h2 class="title">best bikes for you</h2>
+						<h4 class="title">best service for your invertor and battery by us</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-						<a href="single-shop.html" class="btn"><span>buy now</span></a>
-					</div>
-					<div class="slide-img-cover">
-						<a href="single-shop.html" class="lable-bike">
-							<div class="lable-bike-img"><img src="assets/img/bike-info-slide.jpg" alt="img"></div>
-							<div class="lable-bike-item">
-								<div class="model">model SX-200</div>
-								<div class="price">$1399</div>
-							</div>
-						</a>
-						<img src="assets/img/img-slider.png" alt="img" class="slide-img">
+						<a href="single-shop.html" class="btn" tabindex="0"><span>Get Service</span></a>
+					</div>				
+				</div>
+	<!-- service end -->
+	<!--============== S-CATEGORY-BICYKLE ==============-->
+	<section class="s-category-bicycle">
+		<div class="container">
+			<div class="slider-categ-bicycle">
+				
+				<div class="slide-categ-bicycle">
+					<div class="categ-bicycle-item">
+						<img src="assets/img/carlogo.png" alt="category">
+						<div class="categ-bicycle-info">
+							<h4 class="title">Vehicles<br>Battery</h4>
+							<a href="shop.html" class="btn"><span>shop now</span></a>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="main-slide">
-				<div class="main-slide-bg" style="background-image: url(assets/img/bg-slider-2.svg);"></div>
-				<div class="container">
-					<div class="main-slide-info">
-						<h2 class="title">best bikes for you</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore consectetur sint iure id expedita saepe.</p>
-						<a href="single-shop.html" class="btn"><span>buy now</span></a>
-					</div>
-					<div class="slide-img-cover">
-						<a href="single-shop.html" class="lable-bike">
-							<div class="lable-bike-img"><img src="assets/img/bike-info-slide.jpg" alt="img"></div>
-							<div class="lable-bike-item">
-								<div class="model">model M-300</div>
-								<div class="price">$1199</div>
-							</div>
-						</a>
-						<img src="assets/img/img-slider-2.png" alt="img" class="slide-img">
+				<div class="slide-categ-bicycle">
+					<div class="categ-bicycle-item">
+						<img src="assets/img/categ-1.png" alt="category">
+						<div class="categ-bicycle-info">
+							<h4 class="title">Inverter</h4>
+							<a href="shop.html" class="btn"><span>shop now</span></a>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="main-slide">
-				<div class="main-slide-bg" style="background-image: url(assets/img/bg-slider-3.svg);"></div>
-				<div class="container">
-					<div class="main-slide-info">
-						<h2 class="title">best bikes for you</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis distinctio tenetur ab ut! Qui, facilis.</p>
-						<a href="single-shop.html" class="btn"><span>buy now</span></a>
-					</div>
-					<div class="slide-img-cover">
-						<a href="single-shop.html" class="lable-bike">
-							<div class="lable-bike-img"><img src="assets/img/bike-info-slide.jpg" alt="img"></div>
-							<div class="lable-bike-item">
-								<div class="model">model X-230</div>
-								<div class="price">$1099</div>
-							</div>
-						</a>
-						<img src="assets/img/img-slider-3.png" alt="img" class="slide-img">
+				<div class="slide-categ-bicycle">
+					<div class="categ-bicycle-item">
+						<img src="assets/img/dark-categ-img-4.png" alt="category">
+						<div class="categ-bicycle-info">
+							<h4 class="title">Inverter<br>Battery</h4>
+							<a href="shop.html" class="btn"><span>shop now</span></a>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="main-slide">
-				<div class="main-slide-bg" style="background-image: url(assets/img/bg-slider.svg);"></div>
-				<div class="container">
-					<div class="main-slide-info">
-						<h2 class="title">best bikes for you</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-						<a href="single-shop.html" class="btn"><span>buy now</span></a>
-					</div>
-					<div class="slide-img-cover">
-						<a href="single-shop.html" class="lable-bike">
-							<div class="lable-bike-img"><img src="assets/img/bike-info-slide.jpg" alt="img"></div>
-							<div class="lable-bike-item">
-								<div class="model">model SX-200</div>
-								<div class="price">$1399</div>
-							</div>
-						</a>
-						<img src="assets/img/img-slider.png" alt="img" class="slide-img">
-					</div>
-				</div>
-			</div>
-			<div class="main-slide">
-				<div class="main-slide-bg" style="background-image: url(assets/img/bg-slider-2.svg);"></div>
-				<div class="container">
-					<div class="main-slide-info">
-						<h2 class="title">best bikes for you</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore consectetur sint iure id expedita saepe.</p>
-						<a href="single-shop.html" class="btn"><span>buy now</span></a>
-					</div>
-					<div class="slide-img-cover">
-						<a href="single-shop.html" class="lable-bike">
-							<div class="lable-bike-img"><img src="assets/img/bike-info-slide.jpg" alt="img"></div>
-							<div class="lable-bike-item">
-								<div class="model">model M-300</div>
-								<div class="price">$1199</div>
-							</div>
-						</a>
-						<img src="assets/img/img-slider-2.png" alt="img" class="slide-img">
+				<div class="slide-categ-bicycle">
+					<div class="categ-bicycle-item">
+						<img src="assets/img/categ-2.png" alt="category">
+						<div class="categ-bicycle-info">
+							<h4 class="title">Other<br>Battery</h4>
+							<a href="shop.html" class="btn"><span>shop now</span></a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!-- ============= main-slider end ============= -->
-
+	<!--============ S-CATEGORY-BICYKLE END ============-->
 	<!--================ S-FIND-BIKE ================-->
 	<section class="s-find-bike">
 		<div class="container">
@@ -235,50 +207,7 @@
 	</section>
 	<!--============== S-FIND-BIKE END ==============-->
 
-	<!--============== S-CATEGORY-BICYKLE ==============-->
-	<section class="s-category-bicycle">
-		<div class="container">
-			<div class="slider-categ-bicycle">
-				<div class="slide-categ-bicycle">
-					<div class="categ-bicycle-item">
-						<img src="assets/img/categ-2.png" alt="category">
-						<div class="categ-bicycle-info">
-							<h4 class="title">mountain <br>& road bikes</h4>
-							<a href="shop.html" class="btn"><span>view more</span></a>
-						</div>
-					</div>
-				</div>
-				<div class="slide-categ-bicycle">
-					<div class="categ-bicycle-item">
-						<img src="assets/img/categ-3.png" alt="category">
-						<div class="categ-bicycle-info">
-							<h4 class="title">bicycle <br>spare parts</h4>
-							<a href="shop.html" class="btn"><span>view more</span></a>
-						</div>
-					</div>
-				</div>
-				<div class="slide-categ-bicycle">
-					<div class="categ-bicycle-item">
-						<img src="assets/img/categ-1.png" alt="category">
-						<div class="categ-bicycle-info">
-							<h4 class="title">accessories <br>& clothing</h4>
-							<a href="shop.html" class="btn"><span>view more</span></a>
-						</div>
-					</div>
-				</div>
-				<div class="slide-categ-bicycle">
-					<div class="categ-bicycle-item">
-						<img src="assets/img/categ-3.png" alt="category">
-						<div class="categ-bicycle-info">
-							<h4 class="title">bicycle <br>spare parts</h4>
-							<a href="shop.html" class="btn"><span>view more</span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--============ S-CATEGORY-BICYKLE END ============-->
+
 
 	<!--=============== S-OUR-ADVANTAGES ===============-->
 	<section class="s-our-advantages" style="background-image: url(assets/img/bg-advantages.jpg);">
@@ -1628,5 +1557,18 @@
 	<script src="assets/js/wow.js"></script>
 	<script src="assets/js/lazyload.min.js"></script>
 	<script src="assets/js/scripts.js"></script>
+	<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+
+}
+
+</script>
 </body>
 </html>
